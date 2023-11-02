@@ -1,0 +1,59 @@
+<!DOCTYPE html> <!-- Объявление типа документа HTML -->
+<html lang="en"> <!-- Открывающий тег для HTML, указание языка страницы -->
+<head>
+    <meta charset="UTF-8"> <!-- Установка кодировки символов UTF-8 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Определение масштабирования страницы для мобильных устройств -->
+	<title>Обратная связь</title> <!-- Установка заголовка страницы -->
+	<link rel="stylesheet" href="styles/style.css"> <!-- Ссылка на внешний CSS-файл для оформления страницы -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"> <!-- Подключение шрифтов Open Sans из Google Fonts -->
+</head>
+<body>
+	<header>
+		<div class="space"></div> <!-- Пустой блок для промежутка в верхней части -->
+		<a class="header-link" href="index.html"><div>Главная</div></a> <!-- Ссылка на главную страницу -->
+		<a class="header-link" href="cabinet.html"><div>Аутентификация</div></a> <!-- Ссылка на страницу аутентификации -->
+		<div class="space"></div> <!-- Пустой блок для промежутка в верхней части -->
+	</header>
+        <h1>ОБРАТНАЯ СВЯЗЬ</h1> <!-- Заголовок страницы -->
+        <form action="https://httpbin.org/post" method="post" enctype="multipart/form-data"> <!-- Начало формы для отправки данных на сервер методом POST -->
+            <label for="fio">ФИО:</label> <!-- Метка для поля ввода ФИО -->
+            <input type="text" id="fio" name="fio" required><br><br> <!-- Поле для ввода ФИО -->
+
+            <label for="email">Email:</label> <!-- Метка для поля ввода email -->
+            <input type="email" id="email" name="email" required><br><br> <!-- Поле для ввода email -->
+
+            <label>Откуда узнали обо мне:</label><br> <!-- Метка для группы радиокнопок -->
+
+            <input type="radio" id="radio1" name="source" value="радио1">
+            <label for="radio1">Социальные сети</label><br> <!-- Первая радиокнопка -->
+
+            <input type="radio" id="radio2" name="source" value="радио2">
+            <label for="radio2">От друзей</label><br> <!-- Вторая радиокнопка -->
+
+            <input type="radio" id="radio3" name="source" value="радио3">
+            <label for="radio3">Другое</label><br><br> <!-- Третья радиокнопка -->
+
+            <label for="type">Тип обращения:</label> <!-- Метка для выпадающего списка -->
+            <select id="type" name="type"> <!-- Выпадающий список с выбором типа обращения -->
+                <option value="жалоба">Жалоба</option>
+                <option value="предложение">Предложение</option>
+            </select><br><br>
+    
+            <label for="message">Текст сообщения:</label><br> <!-- Метка для текстового поля -->
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br> <!-- Текстовое поле для сообщения -->
+
+            <label for="attachment">Вложения:</label> <!-- Метка для поля загрузки файлов -->
+            <input type="file" id="attachment" name="attachment"><br><br> <!-- Поле для загрузки вложений -->
+
+            <input type="checkbox" id="consent" name="consent" value="согласие" required> <!-- Флажок для согласия на обработку персональных данных -->
+            <label for="consent">Даю согласие на обработку персональных данных</label><br><br> <!-- Метка для флажка согласия -->
+
+            <input type="submit" value="Отправить"> <!-- Кнопка для отправки формы -->
+        </form> <!-- Закрытие формы -->
+        <footer>
+            &copy; Апокина Дарья, 2023 <!-- Информация об авторе и год создания страницы -->
+        </footer>
+    </body>
+</html>
