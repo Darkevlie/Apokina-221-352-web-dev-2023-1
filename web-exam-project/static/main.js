@@ -1,5 +1,5 @@
 const DEFAULT_URL = 'http://exam-2023-1-api.std-900.ist.mospolytech.ru/api';
-const API_KEY = 'f3d3d69-261a-4057-af1f-b37d1ad0c2c7';
+const API_KEY = 'ef3d3d69-261a-4057-af1f-b37d1ad0c2c7';
 const GEOCODE_URL = 'https://catalog.api.2gis.com/3.0/items/geocode';
 const API_KEY_2GIS = '2GIS_API_KEY';
 const PER_PAGE = 10;
